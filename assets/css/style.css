@@ -21,12 +21,115 @@ html, body {
     background-color: #6D8B74;
 }
 
-.navbar img {
-    width: 8vh;
+.brand img {
+    width: 10vh;
 }
 
 .brand {
     display: flex;
     align-items: left;
     justify-content: left;
+}
+
+.select h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal ;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.select select {
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2vh;
+    padding-bottom: 4vh;
+}
+
+.product-img img{
+    width: 40vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vh;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D8B74;
+    width: 100%;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    gap: 1vh;
+}
+
+@media (max-width: 576px) {
+    
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 576px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-areas:
+        'navbar filtros'
+        'navbar main'
+        'navbar main'
+        'footer main';
+    }
+}
+
+
+@media (min-width: 992px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-areas:
+        'navbar navbar'
+        'filtros main'
+        'filtros main'
+        'footer footer';
+    }
 }
