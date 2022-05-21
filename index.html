@@ -13,90 +13,98 @@
 </head>
 <body>  
         <div class="grid-container">
-            <div class="navbar">
-                <img src="assets/imgs/logo.png" class="logo">
-                <ul class="items">
-                    <li><a href="#perfume">Fragrances (3)</a></li>
-                    <li><a href="#ropa">Clothes (3)</a></li>
-                    <li><a href="#zapatos">Shoes (3)</a></li>
-                    <li><a href="#reloj">Accesories (3)</a></li>
-                </ul>
-                <button class="nav-button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
 
+            <div class="navbar">
+                <div class="logo">         
+                    <img src="assets/imgs/logo.png">
+                </div>
+                <div class="menu"> 
+                    <ul class="items">
+                    <li><a href="#adidas">Adidas</a></li>
+                    <li><a href="#jordan">Jordan</a></li>
+                    <li><a href="#nb">New Balance</a></li>
+                    <li><a href="#nike">Nike</a></li>
+                    </ul>
+                </div>
+                <div class="nav-burger" >
+                    <button class="nav-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
 
 
             <div class="select">
                 <h1>Filter: </h1>
                 <select id="standard-select">
                     <option value="Option 1">--Select--</option>
-                    <option value="Option 2">Nike</option>
-                    <option value="Option 3">Jordan</option>
-                    <option value="Option 4">Adidas</option>
-                    <option value="Option 5">New Balance</option>
+                    <option value="Option 2"><a href="#adidas">Adidas</a></option>
+                    <option value="Option 3"><a href="#jordan">Jordan</a></option>
+                    <option value="Option 4"><a href="#nb">New Balance</a></option>
+                    <option value="Option 5"><a href="#nike">Nike</a></option>
                 </select>
             </div>
 
 
             <div class="main-container">
-                <article class="card">
-                    <img src="assets/imgs/Newbalance.jpg" id="nb">
-                    <h3>Men traditional Black/Red shirt</h3>
-                    <p>Price: <strong style="color:green">15$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
+                <div class="contenido-main">
+                <div class="cards">
+                    <article class="card" id="nb">
+                        <img src="assets/imgs/Newbalance.jpg" id="nb">
+                        <h3>Men traditional Black/Red shirt</h3>
+                        <p>Price: <strong style="color:green">15$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
 
-                <article class="card">
-                    <img src="assets/imgs/Newbalance2.jpg" id="nb-e">
-                    <h3>Men basic shirt</h3>
-                    <p>Price: <strong style="color:green">10$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
-                
-                <article class="card">
-                    <img src="assets/imgs/Nike.jpg" id="nike">
-                    <h3>Men hoodie</h3>
-                    <p>Price: <strong style="color:green">22$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
+                    <article class="card" id="delete-t">
+                        <img src="assets/imgs/Newbalance2.jpg">
+                        <h3>Men basic shirt</h3>
+                        <p>Price: <strong style="color:green">10$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
                     
-                <article class="card" id="nike-e" >                
-                    <img src="assets/imgs/nike2.png">
-                    <h3>New Balance Aime Leon Dore</h3>
-                    <p>Price: <strong style="color:green">200$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
+                    <article class="card" id="delete-sp">
+                        <img src="assets/imgs/Nike.jpg" id="nike">
+                        <h3>Men hoodie</h3>
+                        <p>Price: <strong style="color:green">22$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
+                        
+                    <article class="card" id="delete-t" >                
+                        <img src="assets/imgs/nike2.png">
+                        <h3>New Balance Aime Leon Dore</h3>
+                        <p>Price: <strong style="color:green">200$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
 
-                <article class="card" id="adidas" >
-                    <img src="assets/imgs/Adidas.jpeg">
-                    <h3>Brown classic shoes</h3>
-                    <p>Price: <strong style="color:green">42$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
+                    <article class="card" id="delete-sp">
+                        <img src="assets/imgs/Adidas.jpeg" id="adidas">
+                        <h3>Brown classic shoes</h3>
+                        <p>Price: <strong style="color:green">42$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
 
-                <article class="card" id="adidas-e" >
-                    <img src="assets/imgs/Adidas2.jpg">
-                    <h3>Black Oxford shoes</h3>
-                    <p>Price: <strong style="color:green">55$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
+                    <article class="card" id="delete-t" >
+                        <img src="assets/imgs/Adidas2.jpg">
+                        <h3>Black Oxford shoes</h3>
+                        <p>Price: <strong style="color:green">55$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
 
-                <article class="card" id="jordan" >
-                    <img src="assets/imgs/Jordan.png">
-                    <h3>Black Quartz watch</h3>
-                    <p>Price: <strong style="color:green">250$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
+                    <article class="card" id="delete-sp" >
+                        <img src="assets/imgs/Jordan.png" id="jordan" style="background-color: white;">
+                        <h3>Black Quartz watch</h3>
+                        <p>Price: <strong style="color:green">250$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
 
-                <article class="card" id="jordan-e" >
-                    <img src="assets/imgs/Jordan2.jpg">
-                    <h3>Black smartwatch</h3>
-                    <p>Price: <strong style="color:green">100$</strong></p>
-                    <button class="boton">Buy</button>
-                </article>
-                
+                    <article class="card" id="delete-t" >
+                        <img src="assets/imgs/Jordan2.jpg">
+                        <h3>Black smartwatch</h3>
+                        <p>Price: <strong style="color:green">100$</strong></p>
+                        <button class="boton">Buy</button>
+                    </article>
+                </div>
                 <div class="flex-item" >
                     <div class="pagination">
                     <a href="#">&laquo;</a>
@@ -104,6 +112,7 @@
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">&raquo;</a></div>
+                </div>
                 </div>
             </div>
 
