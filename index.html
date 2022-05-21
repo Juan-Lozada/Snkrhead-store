@@ -11,302 +11,117 @@
     <link rel="manifest" href="assets/imgs/site.webmanifest">
     <title>SnkrHead Store</title>
 </head>
-<body>
-        <navbar class="navbar">
-            <div class="brand">
-                    <img src="assets/imgs/logo.png">
+<body>  
+        <div class="grid-container">
+            <div class="navbar">
+                <img src="assets/imgs/logo.png" class="logo">
+                <ul class="items">
+                    <li><a href="#perfume">Fragrances (3)</a></li>
+                    <li><a href="#ropa">Clothes (3)</a></li>
+                    <li><a href="#zapatos">Shoes (3)</a></li>
+                    <li><a href="#reloj">Accesories (3)</a></li>
+                </ul>
+                <button class="nav-button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-        </navbar>
 
-        <section class="filtros">
-                <div class="select">
-                    <h1>Filter: </h1>
-                    <select id="standard-select">
-                      <option value="Option 1">--Select--</option>
-                      <option value="Option 2">Nike</option>
-                      <option value="Option 3">Jordan</option>
-                      <option value="Option 4">Adidas</option>
-                      <option value="Option 5">New Balance</option>
-                    </select>
-                </div>
-        </section>
 
-        <section class="main">
-            <div class="container">
-                <div class="gallery">       
-                   <div class="card">   <!-- NB ALD brownw -->
-                        <div class="product-img">
-                            <img src="assets/imgs/Newbalance4.png" alt="">
-                        </div>
-                    <div class="product-details">
-                        <span class="product-catagory">New Balance</span>
-                        <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                        <div class="product-bottom-details">
-                        <div class="product-price"><small>$96.00</small>$230.99</div>
-                            <div class="product-links">
-                                <a href=""><i class="fa fa-heart"></i></a>
-                                <a href=""><i class="fa fa-shopping-cart"></i></a>
-                            </div>
-			            </div>
-		            </div>
 
-                    <div class="card">     <!-- New balance -->
-                        <div class="product-img">
-                            <img src="assets/imgs/Newbalance3.jpg" alt="">
-                        </div>
-                    <div class="product-details">
-                        <span class="product-catagory">New Balance</span>
-                        <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                        <div class="product-bottom-details">
-                        <div class="product-price"><small>$96.00</small>$230.99</div>
-                            <div class="product-links">
-                                <a href=""><i class="fa fa-heart"></i></a>
-                                <a href=""><i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div> 
+            <div class="select">
+                <h1>Filter: </h1>
+                <select id="standard-select">
+                    <option value="Option 1">--Select--</option>
+                    <option value="Option 2">Nike</option>
+                    <option value="Option 3">Jordan</option>
+                    <option value="Option 4">Adidas</option>
+                    <option value="Option 5">New Balance</option>
+                </select>
+            </div>
+
+
+            <div class="main-container">
+                <article class="card">
+                    <img src="assets/imgs/Newbalance.jpg" id="nb">
+                    <h3>Men traditional Black/Red shirt</h3>
+                    <p>Price: <strong style="color:green">15$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
+
+                <article class="card">
+                    <img src="assets/imgs/Newbalance2.jpg" id="nb-e">
+                    <h3>Men basic shirt</h3>
+                    <p>Price: <strong style="color:green">10$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
                 
+                <article class="card">
+                    <img src="assets/imgs/Nike.jpg" id="nike">
+                    <h3>Men hoodie</h3>
+                    <p>Price: <strong style="color:green">22$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
+                    
+                <article class="card" id="nike-e" >                
+                    <img src="assets/imgs/nike2.png">
+                    <h3>New Balance Aime Leon Dore</h3>
+                    <p>Price: <strong style="color:green">200$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
 
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Newbalance2.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </iv>
+                <article class="card" id="adidas" >
+                    <img src="assets/imgs/Adidas.jpeg">
+                    <h3>Brown classic shoes</h3>
+                    <p>Price: <strong style="color:green">42$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
 
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Newbalance.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
+                <article class="card" id="adidas-e" >
+                    <img src="assets/imgs/Adidas2.jpg">
+                    <h3>Black Oxford shoes</h3>
+                    <p>Price: <strong style="color:green">55$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
+
+                <article class="card" id="jordan" >
+                    <img src="assets/imgs/Jordan.png">
+                    <h3>Black Quartz watch</h3>
+                    <p>Price: <strong style="color:green">250$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
+
+                <article class="card" id="jordan-e" >
+                    <img src="assets/imgs/Jordan2.jpg">
+                    <h3>Black smartwatch</h3>
+                    <p>Price: <strong style="color:green">100$</strong></p>
+                    <button class="boton">Buy</button>
+                </article>
+                
+                <div class="flex-item" >
+                    <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a></div>
                 </div>
+            </div>
 
-                <div class="card">    <!-- N -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Nike.jpg" alt="">
+            
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-icons">
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                        <i class="fa-brands fa-facebook fa-lg"></i>
                     </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/nike2.png" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Nike3.png" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Nike4.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Adidas.jpeg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Adidas2.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Adidas3.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Adidas4.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Jordan.png" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Jordan2.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Jordan3.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">    <!-- New balance -->
-                    <div class="product-img">
-                        <img src="assets/imgs/Jordan4.jpg" alt="">
-                    </div>
-                <div class="product-details">
-                    <span class="product-catagory">New Balance</span>
-                    <h4><a href="">New balance Aime Leon Dore x 993 Brown</a></h4>  
-                    <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                        <div class="product-links">
-                            <a href=""><i class="fa fa-heart"></i></a>
-                            <a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
+                    <div class="rights">
+                        <h3>Todos los derechos reservados</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-        <section class="footer">
-            <div class="container">
-                <div class="footer-icons">
-                    <i class="fa-brands fa-instagram fa-lg"></i>
-                    <i class="fa-brands fa-facebook fa-lg"></i>
-                </div>
-
-                <div class="rights">
-                    <h3>Todos los derechos reservados</h3>
-                </div>
-            </div>
-        </section>
+      
     <script src="https://kit.fontawesome.com/dda935257c.js" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"></script>
 </body>
